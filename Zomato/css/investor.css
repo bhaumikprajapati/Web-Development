@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #d32f2f;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+    margin-left: 20px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+header ul li {
+    margin: 0 10px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+header ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #ffeb3b;
+    transition: width 0.3s ease;
+    -webkit-transition: width 0.3s ease;
+}
+
+header ul li a:hover::after {
+    width: 100%;
+    left: 0;
+    background: #ffeb3b;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #d32f2f;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    font-size: 28px;
+    color: #b02b2b;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content ul li {
+    font-size: 16px;
+    color: #d32f2f;
+    margin-bottom: 10px;
+}
+
+.content ul li a {
+    color: #d32f2f;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.content ul li a:hover {
+    color: #a00a0a;
+}
+
+footer {
+    background-color: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
